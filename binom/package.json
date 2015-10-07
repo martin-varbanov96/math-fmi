@@ -1,0 +1,10 @@
+{
+  "name": "binom",
+  "version": "0.0.0",
+  "description": "binom",
+  "main": "app.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}
