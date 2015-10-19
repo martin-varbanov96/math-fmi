@@ -1,0 +1,10 @@
+{
+  "name": "MinMaxRandomNumber",
+  "version": "0.0.0",
+  "description": "MinMaxRandomNumber",
+  "main": "app.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}
