@@ -2,17 +2,17 @@
     var $a;
     var $b;
 
-    $('button').click(function () {
+    $('#butt').click(function () {        
         $a = $('#a').val();
         $b = $('#b').val();
         
        var $big = getBigger($b, $a);
        var $small = getSmaller($b, $a);
         
+        
         $('#bigger').text($big);
-        $('#smaller').text($small);
-    });
-    
+        $('#smaller').text($small);         
+    });       
 });
 
 
