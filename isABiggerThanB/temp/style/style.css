@@ -1,0 +1,32 @@
+﻿body {
+    background-color: #006600;
+}
+button{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #66CC00;
+    margin: 10px;
+    border-radius:5px;
+    margin-left: 130px;
+}
+form{
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: whitesmoke; 
+}
+#a, #b{
+    margin: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #66CC00;
+}
+#bigger, #smaller{
+    margin: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    color: #6C0;
+}
