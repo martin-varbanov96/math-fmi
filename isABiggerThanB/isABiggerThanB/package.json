@@ -1,0 +1,10 @@
+{
+  "name": "isABiggerThanB",
+  "version": "0.0.0",
+  "description": "isABiggerThanB",
+  "main": "app.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}
