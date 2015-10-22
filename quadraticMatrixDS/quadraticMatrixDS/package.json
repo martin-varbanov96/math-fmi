@@ -1,0 +1,10 @@
+{
+  "name": "quadraticMatrixDS",
+  "version": "0.0.0",
+  "description": "quadraticMatrixDS",
+  "main": "server.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}
