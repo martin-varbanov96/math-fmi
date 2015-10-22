@@ -1,3 +1,53 @@
 ﻿body {
-    background-color:aqua;
+    background-color:azure;
+}
+.input{
+    background-color:ButtonHighlight;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    margin-left:70px;
+    text-align: center;
+    color:lawngreen;
+    font-size: 30px;
+    text-shadow: 2px 2px whitesmoke;
+
+
+}
+form{
+    padding: 8px;
+    border: 1px solid black;
+    margin:auto;
+    width: 500px;
+    height: 500px;    
+}
+
+#submit {
+    border: 1px solid black;
+    width: 380px;
+    height: 30px;
+    margin: 15px;
+    margin-left: 50px;
+    padding: 10px;
+    text-align: center;
+    color:lawngreen;
+    font-size: 30px;
+    text-shadow: 2px 2px whitesmoke;
+    background-color:ButtonHighlight;
+}
+
+#result{
+    border: 1px solid black;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 30px;
+    margin-left: 185px;
+     color:lawngreen;
+    font-size: 30px;
+    text-shadow: 2px 2px whitesmoke;
+    background-color:ButtonHighlight;
 }
