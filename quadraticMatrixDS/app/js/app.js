@@ -12,7 +12,7 @@
     });
 });
 
-
+//generate a fun   
 function getQuadratticDS(a11, a12, a21, a22){
     return a11 * a22 - a12 * a21;
 }
