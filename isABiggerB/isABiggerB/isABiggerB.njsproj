@@ -3,17 +3,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>isABiggerThanB</Name>
-    <RootNamespace>temp</RootNamespace>
+    <Name>isABiggerB</Name>
+    <RootNamespace>isABiggerB</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>9a0164c5-a996-48e2-8c21-a246870d6265</ProjectGuid>
-    <ProjectHome>
-    </ProjectHome>
-    <StartupFile>js\app.js</StartupFile>
+    <ProjectGuid>71c7191e-0d23-46ea-82f9-391a766c5d17</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -31,15 +30,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="js\app.js" />
-    <Content Include="index.html" />
+    <Compile Include="app.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="style\style.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\" />
-    <Folder Include="style\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

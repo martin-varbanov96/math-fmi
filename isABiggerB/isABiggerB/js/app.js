@@ -10,8 +10,8 @@
        var $small = getSmaller($b, $a);
         
         
-        $('#bigger').text($big);
-        $('#smaller').text($small);         
+        $('#bigger').text("The bigger number is= " + $big);
+        $('#smaller').text("The smaller numberis= " + $small);         
     });       
 });
 
@@ -22,8 +22,13 @@ function getBigger(a, b) {
 }
 
 //a simple function for getting a smaller element
-function getSmaller(a, b) {
-    return (a < b) ? a : b;
+function getSmaller(b, a) {
+    if (a < b) {
+        return a;
+    }
+    else {
+        return b;
+    }
 }
 
 

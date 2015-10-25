@@ -10,6 +10,12 @@
     margin-left: 130px;
     width: 70px;
 }
+#butt:hover{
+    background-color: blueviolet;
+}
+#butt:active{
+    text-decoration: underline;
+}
 form{
     margin: auto;
     border: 1px solid black;

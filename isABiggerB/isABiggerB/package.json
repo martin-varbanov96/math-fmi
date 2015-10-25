@@ -1,7 +1,7 @@
 {
-  "name": "isABiggerThanB",
+  "name": "isABiggerB",
   "version": "0.0.0",
-  "description": "isABiggerThanB",
+  "description": "isABiggerB",
   "main": "app.js",
   "author": {
     "name": "hp",
