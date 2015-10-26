@@ -1,0 +1,10 @@
+{
+  "name": "findMatrixDS3x3",
+  "version": "0.0.0",
+  "description": "findMatrixDS3x3",
+  "main": "app.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}

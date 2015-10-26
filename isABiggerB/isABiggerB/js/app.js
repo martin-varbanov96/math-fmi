@@ -6,8 +6,10 @@
         $a = $('#a').val();
         $b = $('#b').val();
         
-       var $big = getBigger($b, $a);
-       var $small = getSmaller($b, $a);
+       var $big = getBigger($a, $b);
+       var $small = getSmaller($a, $b);
+        
+        console.log("a= " + $a + " b= " + $b + " the big one should be: " + $big + " the small one is= " + $small);
         
         
         $('#bigger').text("The bigger number is= " + $big);
@@ -22,7 +24,7 @@ function getBigger(a, b) {
 }
 
 //a simple function for getting a smaller element
-function getSmaller(b, a) {
+function getSmaller(a, b) {
     if (a < b) {
         return a;
     }
