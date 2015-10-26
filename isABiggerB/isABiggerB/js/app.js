@@ -1,20 +1,10 @@
-﻿$(function () {
-    var $a;
-    var $b;
-
-    $('#butt').click(function () {        
-        $a = $('#a').val();
-        $b = $('#b').val();
-        
-       var $big = getBigger($a, $b);
-       var $small = getSmaller($a, $b);
-        
-        console.log("a= " + $a + " b= " + $b + " the big one should be: " + $big + " the small one is= " + $small);
-        
-        
-        $('#bigger').text("The bigger number is= " + $big);
-        $('#smaller').text("The smaller numberis= " + $small);         
-    });       
+﻿$(document).ready(function () {
+    $(document).keypress(function (e) {
+        if (e.which == 13) {
+            main();
+        }
+    });
+    $('#butt').click(main);       
 });
 
 
@@ -31,6 +21,22 @@ function getSmaller(a, b) {
     else {
         return b;
     }
+}
+function main(){
+    var $a;
+    var $b;
+
+    $a = $('#a').val();
+    $b = $('#b').val();
+    
+    var $big = getBigger($a, $b);
+    var $small = getSmaller($a, $b);
+    
+    console.log("a= " + $a + " b= " + $b + " the big one should be: " + $big + " the small one is= " + $small);
+    
+    
+    $('#bigger').text("The bigger number is= " + $big);
+    $('#smaller').text("The smaller numberis= " + $small); 
 }
 
 
