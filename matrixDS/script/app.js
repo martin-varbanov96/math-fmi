@@ -43,7 +43,7 @@ function getDS(inputMatrix){
     if(is3x3(inputMatrix) == true){
         return get3x3DS(inputMatrix);
     }
-    var outputMatrix = getEmpyMatrix([], inputMatrix.length);
+    var outputMatrix = getEmpyMatrix([], inputMatrix.length - 1);
     var index = -1;
     var jIndex = 0;
     var kIndex =0;
@@ -56,7 +56,8 @@ function getDS(inputMatrix){
                     console.log(outputMatrix); // TEMP!!!
                     kIndex++;
                 }
-            }            
+            }
+            kIndex = 0;
             jIndex++;
 
         }
