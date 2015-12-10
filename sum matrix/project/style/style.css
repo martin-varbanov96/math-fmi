@@ -1,0 +1,21 @@
+
+h1 {
+    color: red;
+}
+
+body {
+    background-color: antiquewhite;
+}
+tbody, table, tr, td{
+    border: 1px solid black;
+}
+.textFieldLeft, .textFieldRight{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin: 2px;
+}
+/*temp*/
+table{
+    margin: 10px;
+}
