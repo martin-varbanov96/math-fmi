@@ -7,18 +7,30 @@
     <title></title>
 </head>
 <body>
-    <h1>Hello world </h1>
-    <input type="text" id="inputText"/>
-    <button id="inputButton">MATRIX</button>
-    <table>
-        <tbody id="matrixLeft"></tbody>
-    </table>
-    <table>
-        <tbody id="matrixRight"></tbody>
-    </table>
-    <button id="sumButton">SUM</button>
-    <button id="multiplyButton">Multiply</button>
+    <img src="img/hamburger.png" id="burger" />
+    <div id="menu">        
+        <input value = 'Enter width: ' type="text" class="menuElement"id="inputText" onblur="if(this.value == ''){this.value = 'Enter width: ' }" onfocus="if(this.value == 'Enter width: '){this.value = '' }" />
+        <button class="menuElement" id="inputButton">MATRIX</button>
+        <button class="menuElement" id="sumButton">SUM</button>
+        <button class="menuElement" id="multiplyButton">Multiply</button>
+    </div>
+    <div id="wrapper">
+        <h1>Use me, save a tree</h1>
+        <div id="scene">
+            <table>
+                <tbody id="matrixLeft"></tbody>
+            </table>
+            <table>
+                <tbody id="matrixRight"></tbody>
+            </table>
+            <table>
+                <tbody id="matrixResult"></tbody>
+            </table>
+        </div>
 
+    </div>
+
+    <script src="script/jquery-ui.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="script/app.js"></script>
 </body>
