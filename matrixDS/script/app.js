@@ -4,13 +4,10 @@ main();
 
 function main(){
     var matrix = [
-        [-6, -5, 0, 0, 0, 0],
-        [-1, -6, -5, 0, 0, 0],
-        [0, -1, -6, -5, 0, 0],
-        [0, 0, -1, -6, -5, 0],
-        [0, 0, 0, -1, -6, -5],
-        [0, 0, 0, 0, -1, -6,]
-
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16]
     ];
     var a = getDS(matrix);
     console.log(a);
@@ -39,26 +36,26 @@ function isMatrixSquare(inputMatrix){
     return true;
 }
 function getDS(inputMatrix){
-    if(isMatrixSquare(inputMatrix) == false){
-        
-       return -465; 
+    if(isMatrixSquare(inputMatrix) == false){        
+       return NaN; 
     }
     if(is3x3(inputMatrix) == true){
         return get3x3DS(inputMatrix);
     }
-    var outputMatrix = getEmpyMatrix([], inputMatrix.length - 1);
+    var outputMatrix = getEmptyMatrix([], inputMatrix.length - 1);
     var index = -1;
     var jIndex = 0;
-    var kIndex =0;
+    var kIndex = 0;
     for (var i = 0; i < inputMatrix.length; i++){
         index *= -1;
         for (var j=1; j < inputMatrix.length; j++){
-            for (var k=1; k < inputMatrix.length; k++){
+            for (var k=0; k < inputMatrix.length; k++){
                 if(i != k){
                     outputMatrix[jIndex][kIndex] = inputMatrix[j][k];
                     console.log(outputMatrix); // TEMP!!!
-                    kIndex++;
                 }
+                kIndex++;
+
             }
             kIndex = 0;
             jIndex++;
@@ -67,13 +64,13 @@ function getDS(inputMatrix){
         console.log("Getting deeper");//TEMP!!
         outputMatrix = getDS(outputMatrix);
         return inputMatrix[0][i] * index * outputMatrix;
-    }
-    
+    }    
 }
 
-function getEmpyMatrix(inputMatrix, n){
+//Returns an empty Matrix nxn
+function getEmptyMatrix(inputMatrix, n){
     for(var i=0; i<n; i++) {
         inputMatrix[i] = new Array(n);
     }
-    return inputMatrix
+    return inputMatrix;
 }
